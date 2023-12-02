@@ -4,6 +4,55 @@
     font-family: 'Poppins', cursive;
 }
 
+/* Atur viewport */
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+body {
+    background: #264653;
+    margin: 0;
+    padding: 20px; /* Tambahkan padding agar konten tidak terlalu dekat dengan tepi */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetings {
+    font-size: 6vw;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fefefe;
+}
+
+.heart {
+    width: 30vw;
+    height: 15vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Tambahkan transform agar elemen terpusat */
+}
+
+/* Tambahkan media query untuk iPhone 11 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .greetings {
+        font-size: 4vw; /* Sesuaikan ukuran font untuk perangkat iPhone 11 */
+    }
+
+    .heart {
+        width: 40vw;
+        height: 20vh;
+    }
+}
+
+
+/*batas*/
 body {
     background: #264653;
     margin: 0;
